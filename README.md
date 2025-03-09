@@ -6,6 +6,8 @@
  Admin: Quản trị viên có thể thêm, chỉnh sửa, xóa sản phẩm, danh mục, bài viết và quản lý quyền người dùng.
  Client: Khách hàng có thể đặt hàng, yêu cầu đặt lại mật khẩu, xác thực và đăng ký tài khoản.
 
+![Trang Admin](./images/trangchu.png)
+
 ## Chức năng chính
 Quản lý sản phẩm, danh mục, bài viết
 Phân quyền người dùng
@@ -34,7 +36,7 @@ JWT_SECRET=your_jwt_secret
 ## Chạy server
 npm start
 Truy cập trang web
-Mở trình duyệt và truy cập: http://localhost:5000
+Mở trình duyệt và truy cập: http://localhost:3000
 
 ## Công nghệ sử dụng
 Backend: Node.js, Express, MongoDB
