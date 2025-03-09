@@ -4,7 +4,7 @@
 
  Products Management System là một ứng dụng web dùng để quản lý thông tin sản phẩm, danh mục và bài viết. <br>Dự án áp dụng phương pháp Server-side Rendering (SSR) và gồm hai phần chính:<br>
  Admin: Quản trị viên có thể thêm, chỉnh sửa, xóa sản phẩm, danh mục, bài viết và quản lý quyền người dùng.<br>
- Client: Khách hàng có thể đặt hàng, yêu cầu đặt lại mật khẩu, xác thực và đăng ký tài khoản.
+ Client: Khách hàng có thể tìm kiếm, đặt hàng, yêu cầu đặt lại mật khẩu, xác thực và đăng ký tài khoản.
 
 ![Trang Admin](./images/trangchu.png)
 
