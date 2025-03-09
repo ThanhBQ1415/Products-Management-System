@@ -33,6 +33,9 @@ MONGO_URI=your_mongodb_connection_string
 PORT=5000
 JWT_SECRET=your_jwt_secret
 
+## Database
+![Trang Admin](./images/db.png)
+
 ## Chạy server
 npm start
 Truy cập trang web
