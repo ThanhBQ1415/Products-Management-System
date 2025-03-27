@@ -31,5 +31,4 @@ const articalCategorySchema = new mongoose.Schema(
 );
 
 const category = mongoose.model('articalCategorys',articalCategorySchema,"articalCategorys")
-
-module.exports = category;
+module.exports = category; 

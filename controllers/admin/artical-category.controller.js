@@ -46,6 +46,7 @@ module.exports.createPost = async (req,res) =>{
     res.redirect(`${systemConfig.prefixAdmin}/artical-category`)
 }
 
+
 //[Delete] /admin/artical-category/delete/:id
 module.exports.delete = async (req,res) => {
     try{
