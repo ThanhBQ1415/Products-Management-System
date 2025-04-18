@@ -7,21 +7,26 @@ const Cart = require("../model/carts.model");
 const db = require("../config/database"); 
 const md5 = require("md5");
 
+let server;
+
+// Increase timeout and setup server
 beforeAll(async () => {
-    await db.connect(); 
-});
+    await db.connect();
+    server = app.listen(3001); // Use different port for testing
+}, 10000); // 10 second timeout
 
 afterAll(async () => {
-    await mongoose.connection.close(); 
-});
+    await mongoose.connection.close();
+    await server.close();
+}, 10000);
 
 describe("📂 User Registration API", () => {
-
     beforeEach(async () => {
-        await User.deleteMany({}); // Xóa dữ liệu User trước mỗi test
-        await Cart.deleteMany({}); // Xóa dữ liệu Cart trước mỗi test
-    });
+        await User.deleteMany({});
+        await Cart.deleteMany({});
+    }, 10000); // Increase timeout for database cleanup
 
+    // Add timeout to individual tests
     test("✅ should register successfully and create a user", async () => {
         const newUser = {
             fullName: "Bui Quang Thanh",
